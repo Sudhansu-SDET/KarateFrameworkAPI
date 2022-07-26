@@ -1,0 +1,13 @@
+<testsuite failures="0" name="src/test/java/features/getapi.feature" skipped="0" tests="1" time="2.406141">
+  <testcase classname="src.test.java.features.getapi" name="Get user details positive" time="2.406141">
+    <system-out>Given url 'https://gorest.co.in/public/v1/users' .......................... passed
+And path '30' ............................................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed
+* def jsonResponse = response ............................................. passed
+* def actualName = jsonResponse.data.name ................................. passed
+* print actualName ........................................................ passed
+* match actualName == 'Girik Banerjee CPA' ................................ passed</system-out>
+  </testcase>
+</testsuite>
