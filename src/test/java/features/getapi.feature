@@ -11,6 +11,7 @@ Feature: Get API Feature
     * def actualName = jsonResponse.data.name
     * print actualName
     * match actualName == 'Girik Banerjee CPA'
+    
 
   Scenario: Get user details negative
     Given url 'https://gorest.co.in/public/v1/users'
