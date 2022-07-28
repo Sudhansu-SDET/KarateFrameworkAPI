@@ -5,6 +5,7 @@ Feature: Print Hello world
 
   Scenario: Hello World scenario
     * print 'Hello Worlds'
+    * print baseURL
 
   Scenario: Declare and Print values
     * def balance = 200

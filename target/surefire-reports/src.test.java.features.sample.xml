@@ -1,12 +1,6 @@
-<testsuite failures="0" name="src/test/java/features/sample.feature" skipped="0" tests="2" time="0.025157">
-  <testcase classname="src.test.java.features.sample" name="Hello World scenario" time="0.004208">
-    <system-out>* print 'Hello Worlds' .................................................... passed</system-out>
-  </testcase>
-  <testcase classname="src.test.java.features.sample" name="Declare and Print values" time="0.020949">
+<testsuite failures="0" name="src/test/java/features/sample.feature" skipped="0" tests="1" time="0.038821">
+  <testcase classname="src.test.java.features.sample" name="Hello World scenario" time="0.038821">
     <system-out>* print 'Hello Worlds' .................................................... passed
-* def balance = 200 ....................................................... passed
-* def fee = 100 ........................................................... passed
-* def tax = 10 ............................................................ passed
-* print 'total amount is : ' + (balance + fee + tax) ...................... passed</system-out>
+* print baseURL ........................................................... passed</system-out>
   </testcase>
 </testsuite>

@@ -1,4 +1,3 @@
-
 Feature: Get API Feature
 
   Scenario: Get user details positive
@@ -7,11 +6,12 @@ Feature: Get API Feature
     When method GET
     Then status 200
     * print response
+    * print baseUrl
     * def jsonResponse = response
     * def actualName = jsonResponse.data.name
     * print actualName
-    * match actualName == 'Girik Banerjee CPA'
-    
+    * match actualName == 'Deven Sharma'
+
 
   Scenario: Get user details negative
     Given url 'https://gorest.co.in/public/v1/users'
@@ -19,3 +19,4 @@ Feature: Get API Feature
     When method GET
     Then status 404
     * print response
+
