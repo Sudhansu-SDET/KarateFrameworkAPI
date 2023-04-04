@@ -1,6 +1,6 @@
 # new feature
 # Tags: optional
-
+#Page -  1
 Feature: Print and declare variables
 
   Scenario: Hello World scenario

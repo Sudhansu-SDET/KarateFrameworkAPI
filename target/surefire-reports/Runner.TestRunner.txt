@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: Runner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.047 s <<< FAILURE! - in Runner.TestRunner
+runTest  Time elapsed: 0.047 s  <<< ERROR!
+java.lang.NoClassDefFoundError: com/intuit/karate/Suite
+Caused by: java.lang.ClassNotFoundException: com.intuit.karate.Suite
+

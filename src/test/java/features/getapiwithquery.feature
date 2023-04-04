@@ -1,3 +1,5 @@
+#Page -  4
+
 Feature: Get API with Query Parameter
 
   Scenario: Get all the active male users

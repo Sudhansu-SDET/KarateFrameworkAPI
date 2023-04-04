@@ -1,19 +1,11 @@
 # new feature
 # Tags: optional
-#Page -  7
+#Page -  9
 Feature: Create user using post api
 
   Background:
     * url baseUrl
-    * def requestPayLoad =
-    """
-    {
-    "name":"johny11",
-    "email":"johny13@test.org",
-    "gender":"male",
-    "status":"active"
-    }
-   """
+    * def requestPayLoad = read('classpath:src/test/resources/Payload/User.json')
 
   Scenario: Create a user with given data
 

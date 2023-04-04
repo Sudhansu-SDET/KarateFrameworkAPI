@@ -1,6 +1,6 @@
 # new feature
 # Tags: optional
-
+#Page -  6
 Feature: Validate Authorization using bearer tokens
 
   Scenario: Static Token ID
