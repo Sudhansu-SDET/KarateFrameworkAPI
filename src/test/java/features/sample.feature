@@ -1,11 +1,13 @@
 # new feature
 # Tags: optional
 
-Feature: Print Hello world
+Feature: Print and declare variables
 
   Scenario: Hello World scenario
     * print 'Hello Worlds'
-    * print baseURL
+    * print 'Hello World2'
+    * print baseUrl
+    * print tokenID
 
   Scenario: Declare and Print values
     * def balance = 200

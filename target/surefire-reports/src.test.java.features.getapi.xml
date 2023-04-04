@@ -1,14 +1,34 @@
-<testsuite failures="0" name="src/test/java/features/getapi.feature" skipped="0" tests="1" time="3.036899">
-  <testcase classname="src.test.java.features.getapi" name="Get user details positive" time="3.036899">
-    <system-out>Given url 'https://gorest.co.in/public/v1/users' .......................... passed
-And path '30' ............................................................. passed
-When method GET ........................................................... passed
-Then status 200 ........................................................... passed
-* print response .......................................................... passed
-* print baseUrl ........................................................... passed
-* def jsonResponse = response ............................................. passed
-* def actualName = jsonResponse.data.name ................................. passed
-* print actualName ........................................................ passed
-* match actualName == 'Deven Sharma' ...................................... passed</system-out>
+<testsuite failures="1" name="src/test/java/features/getapi.feature" skipped="0" tests="1" time="0">
+  <testcase classname="src.test.java.features.getapi" name="Get user details positive" time="0">
+    <failure message="getapi.feature:3 - evaluation of 'karate-config.js' failed: evaluation (js) failed: read('classpath:karate-config.js'), java.lang.RuntimeException: evaluation (js) failed: function() {&#13;&#10;  var env = karate.env; // get system property 'karate.env'&#13;&#10;  var os = karate.os;&#13;&#10;  karate.log('karate.env system property was:', env);&#13;&#10;  karate.log(&quot;Your OS Is&quot;,os);&#13;&#10;&#13;&#10;  if (!env) {&#13;&#10;    env = 'dev';&#13;&#10;&#13;&#10;  }&#13;&#10;  var config = {&#13;&#10;    env: env,&#13;&#10;    baseUrl: 'https://gorest.co.in'&#13;&#10;    os : os&#13;&#10;  }&#13;&#10;  if (env == 'dev') {&#13;&#10;    config.baseUrl = 'https://gorest.co.in'&#13;&#10;  } else if (env == 'e2e') {&#13;&#10;    config.baseUrl = 'https://gorest.co.in';&#13;&#10;  }&#13;&#10;  return config;&#13;&#10;}, javax.script.ScriptException: &lt;eval&gt;:14:4 Expected comma but found ident&#13;&#10;    os : os&#13;&#10;    ^ in &lt;eval&gt; at line number 14 at column number 4&#10;stack trace: jdk.scripting.nashorn/jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:477)&#10;stack trace: com.intuit.karate.ScriptBindings.eval(ScriptBindings.java:155)">* scenario init failed .................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: getapi.feature:3 - evaluation of 'karate-config.js' failed: evaluation (js) failed: read('classpath:karate-config.js'), java.lang.RuntimeException: evaluation (js) failed: function() {&#13;
+  var env = karate.env; // get system property 'karate.env'&#13;
+  var os = karate.os;&#13;
+  karate.log('karate.env system property was:', env);&#13;
+  karate.log("Your OS Is",os);&#13;
+&#13;
+  if (!env) {&#13;
+    env = 'dev';&#13;
+&#13;
+  }&#13;
+  var config = {&#13;
+    env: env,&#13;
+    baseUrl: 'https://gorest.co.in'&#13;
+    os : os&#13;
+  }&#13;
+  if (env == 'dev') {&#13;
+    config.baseUrl = 'https://gorest.co.in'&#13;
+  } else if (env == 'e2e') {&#13;
+    config.baseUrl = 'https://gorest.co.in';&#13;
+  }&#13;
+  return config;&#13;
+}, javax.script.ScriptException: &lt;eval&gt;:14:4 Expected comma but found ident&#13;
+    os : os&#13;
+    ^ in &lt;eval&gt; at line number 14 at column number 4
+stack trace: jdk.scripting.nashorn/jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:477)
+stack trace: com.intuit.karate.ScriptBindings.eval(ScriptBindings.java:155)&#13;
+	at ✽.* scenario init failed (getapi.feature:3)</failure>
   </testcase>
 </testsuite>

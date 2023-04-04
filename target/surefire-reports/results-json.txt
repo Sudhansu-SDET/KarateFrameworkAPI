@@ -1,1 +1,1 @@
-{"features":1,"ignored":0,"efficiency":0.4920383136094674,"failures":null,"totalTime":2328.3253,"threads":1,"scenarios":1,"failed":0,"passed":1,"version":"0.9.6","elapsedTime":4732.0}
+{"features":1,"ignored":0,"efficiency":0.41330128816793893,"failures":{"src.test.java.features.postapi":"postapi.feature:29 - path: $.data.id, actual: null, expected: '#present', reason: actual json-path does not exist"},"totalTime":1732.559,"threads":1,"scenarios":1,"failed":1,"passed":0,"version":"0.9.6","elapsedTime":4192.0}

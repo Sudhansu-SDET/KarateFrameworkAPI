@@ -1,22 +1,24 @@
-Feature: Get API Feature
+Feature: Get API Feature with Path
 
   Scenario: Get user details positive
-    Given url 'https://gorest.co.in/public/v1/users'
-    And path '30'
+    Given url baseUrl+'/public/v1/users'
+    And path '711128'
     When method GET
     Then status 200
     * print response
-    * print baseUrl
     * def jsonResponse = response
     * def actualName = jsonResponse.data.name
     * print actualName
-    * match actualName == 'Deven Sharma'
+    * print baseUrl
+    * match actualName == 'Amritambu Guha'
 
 
   Scenario: Get user details negative
-    Given url 'https://gorest.co.in/public/v1/users'
+    Given url baseUrl+'/public/v1/users'
     And path '9999'
     When method GET
     Then status 404
     * print response
+    * def jsonResponse = response
+    * print jsonResponse.data.message
 

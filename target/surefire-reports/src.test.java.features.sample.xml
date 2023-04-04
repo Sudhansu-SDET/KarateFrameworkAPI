@@ -1,6 +1,8 @@
-<testsuite failures="0" name="src/test/java/features/sample.feature" skipped="0" tests="1" time="0.038821">
-  <testcase classname="src.test.java.features.sample" name="Hello World scenario" time="0.038821">
+<testsuite failures="0" name="src/test/java/features/sample.feature" skipped="0" tests="1" time="0.047039">
+  <testcase classname="src.test.java.features.sample" name="Hello World scenario" time="0.047039">
     <system-out>* print 'Hello Worlds' .................................................... passed
-* print baseURL ........................................................... passed</system-out>
+* print 'Hello World2' .................................................... passed
+* print baseUrl ........................................................... passed
+* print tokenID ........................................................... passed</system-out>
   </testcase>
 </testsuite>

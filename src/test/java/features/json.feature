@@ -46,3 +46,4 @@ Feature: Json feature testing
     * print jsonComplexObject
     * print jsonComplexObject.menu.id
     * print jsonComplexObject.menu.popup.menuitem[0].onclick
+    * print jsonComplexObject.menu.popup
